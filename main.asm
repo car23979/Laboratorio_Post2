@@ -120,3 +120,11 @@ BOTONES_DETECT:
 	ANDI TEMP, 0x03
 	CP TEMP, R23		// Confirma si el cambio se mantiene
 	BRNE MAIN
+
+	// Si B1 se presiona incrementa
+	SBRS R23, 0			// si no se presiona salta
+	CALL INCREMENTAR
+
+	// Si B2 se presiona decrementa
+	SBRS R23, 1			// Si no se presiona salta
+	CALL DECREMENTAR
