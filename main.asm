@@ -67,4 +67,15 @@ SETUP:
 	CLR ALARMA			// LED apagado
 	RJMP MAIN
 
-//
+// Loop Infinito
+MAIN:
+	// Control del Timer0
+	IN TEMP, TIFR0
+	SBRS TEMP, TOV0		// Si no hay overflow, ir a checar botones
+	RJMP CHECK_BOT
+
+    // Se detecta overflow: limpiar bandera y aumentar contador de 100ms
+	SBI TIFR0, TOV0
+	INC OVERFLOW_100MS
+	CPI OVERFLOW_100MS, 10
+	BRNE ACTUALIZA_SEG
