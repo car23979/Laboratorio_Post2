@@ -48,3 +48,9 @@ SETUP:
 	// PORTD salida para display
 	LDI TEMP, 0xFF
 	OUT DDRD, TEMP
+
+	// PORTC entrada para botones con pull-up
+	CBI DDRC, 0         // PC0 entrada
+	CBI DDRC, 1         // PC1 entrada
+	SBI PORTC, 0        // Habilitar pull-up en PC0
+	SBI PORTC, 1        // Habilitar pull-up en PC1
