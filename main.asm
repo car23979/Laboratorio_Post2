@@ -112,3 +112,11 @@ CHECK_BOT:
 	BRNE BOTONES_DETECT	// Continuar si hay cambio
 	RJMP MAIN
 
+BOTONES_DETECT:
+	// Guardar estado detectado para antirebote
+	MOV R23, TEMP
+	RCALL DELAY_10MS
+	IN TEMP, PINC
+	ANDI TEMP, 0x03
+	CP TEMP, R23		// Confirma si el cambio se mantiene
+	BRNE MAIN
