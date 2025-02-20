@@ -54,3 +54,9 @@ SETUP:
 	CBI DDRC, 1         // PC1 entrada
 	SBI PORTC, 0        // Habilitar pull-up en PC0
 	SBI PORTC, 1        // Habilitar pull-up en PC1
+
+	// Inicializar variables
+	CLR CONTADOR_SEG
+	CLR CONTADOR_BOT
+	CLR OVERFLOW_100MS
+
