@@ -140,3 +140,4 @@ BOTONES_DETECT:
 	ADD R30, R24		// Se asume que no hay acarreo ya que es de 4 bits
 	LPM TEMP, Z			// Valor del dígito
 	OUT PORTD, TEMP
+	RJMP MAIN
