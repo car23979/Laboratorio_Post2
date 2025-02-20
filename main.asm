@@ -108,7 +108,7 @@ CHECK_BOT:
 	// Leer botones y comparar con estado previo
 	IN TEMP, PINC
 	ANDI TEMP, 0X03		// Mascara
-	CP TEMO, ESTADO_ANTERIO
+	CP TEMP, ESTADO_ANTERIOR
 	BRNE BOTONES_DETECT	// Continuar si hay cambio
 	RJMP MAIN
 
@@ -130,7 +130,7 @@ BOTONES_DETECT:
 	CALL DECREMENTAR
 
 	// Actualizar estado previo
-	MOV ESTADO_ANTERIO, R23
+	MOV ESTADO_ANTERIOR, R23
 
 	// Actualizar display con el contador de botones
 	LDI R30, LOW(TABLA)
