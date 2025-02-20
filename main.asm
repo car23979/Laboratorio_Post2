@@ -8,10 +8,10 @@
 
 .include "M328PDEF.inc"
 .cseg
-
+.org 0x0000
 
 ; ============================================================
-; Definición de registros y variable
+; Definición de registros
 ; ============================================================
 .def CONTADOR_TIMER   = R20    ; Contador binario (Timer0)
 .def CONTADOR_BOTONES = R21    ; Contador hexadecimal (botones)
