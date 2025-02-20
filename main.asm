@@ -25,3 +25,12 @@ Descripción: Implementación del Timer0 y de un contador de segundos
 // Tabla de segmentos (ánodo común)
 
 TABLA: .db 0xC0,0xF9, 0xA4, 0xB0, 0x99, 0x92, 0x82, 0xF8, 0x80, 0x90, 0x88, 0x83, 0xC6, 0xA1, 0x86, 0x8E // Dígitos del 0 al 15
+
+
+// SETUP
+SETUP:
+	// COnfiguración de Pila
+	LDI TEMP, LOW(RAMEND)
+	OUT SPL, TEMP
+	LDI TEMP, HIGH(RAMEND)
+	OUT SPH, TEMP
