@@ -1,0 +1,40 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\M328PDEF.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\Debug\Laboratorio2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Laboratorio2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Laboratorio2.map</FILE>
+  <FILE>Laboratorio2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <TABLA><FILE>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\main.asm</FILE><LINE>27</LINE></TABLA>
+  <SETUP><FILE>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\main.asm</FILE><LINE>31</LINE></SETUP>
+  <MAIN><FILE>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\main.asm</FILE><LINE>71</LINE></MAIN>
+  <CHECK_BOT><FILE>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\main.asm</FILE><LINE>107</LINE></CHECK_BOT>
+  <ACTUALIZA_SEG><FILE>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\main.asm</FILE><LINE>88</LINE></ACTUALIZA_SEG>
+  <BOTONES_DETECT><FILE>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\main.asm</FILE><LINE>115</LINE></BOTONES_DETECT>
+  <DELAY_10MS><FILE>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\main.asm</FILE><LINE>165</LINE></DELAY_10MS>
+  <INCREMENTAR><FILE>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\main.asm</FILE><LINE>146</LINE></INCREMENTAR>
+  <DECREMENTAR><FILE>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\main.asm</FILE><LINE>155</LINE></DECREMENTAR>
+  <OVERFLOW_INC><FILE>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\main.asm</FILE><LINE>151</LINE></OVERFLOW_INC>
+  <UNDERFLOW_DEC><FILE>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\main.asm</FILE><LINE>160</LINE></UNDERFLOW_DEC>
+  <DELAY_LOOP><FILE>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\main.asm</FILE><LINE>167</LINE></DELAY_LOOP>
+  <DELAY_INNER><FILE>C:\Users\Admin\Documents\GitHub\Laboratorio 2\Laboratorio_2 y Postlab_2\Laboratorio_Post2\main.asm</FILE><LINE>169</LINE></DELAY_INNER>
+ </LABELS>
+</ASSEMBLER_INFO>
