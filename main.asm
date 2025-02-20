@@ -85,3 +85,8 @@ MAIN:
 	INC CONTADOR_SEG
 	ANDI CONTADOR_SEG, 0X0F	// Mantener en 4 bits
 
+ACTUALIZA_SEG:
+	// Combina el contador y el estado de la alarma
+	MOV TEMP, CONTADOR_SEG
+	OR TEMP, ALARMA		// 0x00 o 0x01
+	OUT PORTB, TEMP
