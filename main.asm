@@ -128,3 +128,15 @@ BOTONES_DETECT:
 	// Si B2 se presiona decrementa
 	SBRS R23, 1			// Si no se presiona salta
 	CALL DECREMENTAR
+
+	// Actualizar estado previo
+	MOV ESTADO_ANTERIO, R23
+
+	// Actualizar display con el contador de botones
+	LDI R30, LOW(TABLA)
+	LDI R31, HIGH(TABLA)
+	// Sumar el contador (offset de 0 a 15)
+	MOV R24, CONTADOR_BOT
+	ADD R30, R24		// Se asume que no hay acarreo ya que es de 4 bits
+	LPM TEMP, Z			// Valor del dígito
+	OUT PORTD, TEMP
