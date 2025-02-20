@@ -102,3 +102,13 @@ ACTUALIZA_SEG:
 	MOV TEMP, CONTADOR_SEG
 	OR TEMP, ALARMA
 	OUT PORTB, TEMP
+
+// Control de botones y display
+CHECK_BOT:
+	// Leer botones y comparar con estado previo
+	IN TEMP, PINC
+	ANDI TEMP, 0X03		// Mascara
+	CP TEMO, ESTADO_ANTERIO
+	BRNE BOTONES_DETECT	// Continuar si hay cambio
+	RJMP MAIN
+
