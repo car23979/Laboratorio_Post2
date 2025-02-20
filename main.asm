@@ -79,3 +79,9 @@ MAIN:
 	INC OVERFLOW_100MS
 	CPI OVERFLOW_100MS, 10
 	BRNE ACTUALIZA_SEG
+
+	// Si se han contado 10 desbordamientos (1s)
+	CLR OVERFLOW_100MS
+	INC CONTADOR_SEG
+	ANDI CONTADOR_SEG, 0X0F	// Mantener en 4 bits
+
