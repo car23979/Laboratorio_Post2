@@ -34,3 +34,9 @@ SETUP:
 	OUT SPL, TEMP
 	LDI TEMP, HIGH(RAMEND)
 	OUT SPH, TEMP
+
+	// Configuración Timer0, overflow cada 100ms
+	LDI TEMP, (1 << CS02) | (1 << CS00)   // Prescaler 1024
+	OUT TCCR0B, TEMP
+	CLR TEMP
+	OUT TCNT0, TEMP
