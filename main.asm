@@ -40,3 +40,11 @@ SETUP:
 	OUT TCCR0B, TEMP
 	CLR TEMP
 	OUT TCNT0, TEMP
+
+	//Puertos
+	// PORTB salida para contador de segundos y alarma
+	LDI TEMP, 0X1F
+	OUT DDRB, TEMP
+	// PORTD salida para display
+	LDI TEMP, 0xFF
+	OUT DDRD, TEMP
