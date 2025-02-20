@@ -1,9 +1,10 @@
-;
-; AssemblerApplication4.asm
-;
-; Created: 14/02/2025 04:45:16 p. m.
-; Author : David Carranza
-;
+/*
+Postlaboratorio2.asm
+
+Created: 14/02/2025 04:45:16 p. m.
+Author : David Carranza
+Descripción: 
+
 // Encabezado
 
 .include "M328PDEF.inc"
