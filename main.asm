@@ -90,3 +90,12 @@ ACTUALIZA_SEG:
 	MOV TEMP, CONTADOR_SEG
 	OR TEMP, ALARMA		// 0x00 o 0x01
 	OUT PORTB, TEMP
+
+	// Comparación de contadores y control del LED
+	CP CONTADOR_SEG, CONTADOR_BOT
+	BRNE CHECK_BOT
+	// Si son iguales, togglea el led y reinicial el contador de segundos
+	LDI R23, 0x10
+	EOR ALARMA, R23
+
+	
